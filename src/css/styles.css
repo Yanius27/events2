@@ -1,0 +1,96 @@
+body {
+  text-align: center;
+}
+
+.container {
+  min-width: 180px;
+  padding: 16px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-width: 30px 10px 30px 10px;
+  border-color: rgb(225, 225, 225);
+  border-style: solid;
+  border-radius: 10%;
+
+  background: linear-gradient( #bbb, transparent 1px), linear-gradient( 90deg, #bbb, transparent 1px);
+  background-size: 15px 15px;
+  background-position: center center;
+}
+
+.container_input {
+  position: relative;
+  max-width: 250px;
+  width: 97%;
+  height: 25px;
+}
+
+.title {
+  font-size: 22px;
+  padding-bottom: 15px;
+}
+
+.container_pinnedTasks {
+  width: 100%;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.container_allTasks {
+  width: 100%;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.task {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 6px 6px 6px;
+  font-size: 20px;
+  font-weight: 500;
+  background: white;
+  border: 2px solid black;
+  border-radius: 12px;
+}
+
+.task:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.task_pin {
+  width: 20px;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-left: 100px;
+}
+
+.pinned {
+  background-image: url('../img/V.png');
+  background-size: 70%;
+  background-position: center;
+}
+
+.task_delete {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: -14px;
+  right: 4px;
+  background: url('../img/x.png');
+  background-size: cover;
+}
+
+.error {
+  position: absolute;
+  top: 126px;
+  left: 681px;
+  display: inline-block;
+  padding: 1px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background: white;
+  color: rgb(150, 16, 16);
+  font-size: 13px;
+  font-weight: bold;
+}
